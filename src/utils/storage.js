@@ -1,9 +1,7 @@
 // Storage wrapper that uses Firestore when Firebase config is present,
 // otherwise falls back to localStorage. This keeps the same async API
 // used across the app: get(key), set(key, value), delete(key), list(prefix).
-import { initializeApp } from "firebase/app";
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+
 let db = null
 let firebaseAvailable = false
 
