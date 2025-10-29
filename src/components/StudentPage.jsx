@@ -182,7 +182,7 @@ function StudentPage({ setCurrentPage }) {
 
     } catch (err) {
       console.error('Error:', err)
-      setError('An error occurred. Please try again.')
+      setError('USN not found. Please check and try again.')
     }
 
     setLoading(false)
@@ -196,7 +196,7 @@ function StudentPage({ setCurrentPage }) {
             Seminar Topic Checker
           </h1>
           <p className="text-gray-600">
-            Enter your USN to check your assigned seminar topic
+            Enter your USN to check your seminar topic
           </p>
         </div>
 
