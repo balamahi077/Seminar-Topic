@@ -193,7 +193,7 @@ function StudentPage({ setCurrentPage }) {
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Seminar Topic Checker
+            Check Your Seminar Topic 
           </h1>
           <p className="text-gray-600">
             Enter your USN to check your seminar topic
@@ -209,7 +209,7 @@ function StudentPage({ setCurrentPage }) {
               type="text"
               value={usn}
               onChange={(e) => setUsn(e.target.value)}
-              placeholder="e.g., 1CR21CS001"
+              placeholder="e.g., 3PG22CS000"
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
               onKeyPress={(e) => e.key === 'Enter' && checkTopic()}
             />
