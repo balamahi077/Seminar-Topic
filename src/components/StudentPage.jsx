@@ -193,7 +193,7 @@ function StudentPage({ setCurrentPage }) {
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Check Your Seminar Topic 
+            Seminar Topic 
           </h1>
           <p className="text-gray-600">
             Enter your USN to check your seminar topic
@@ -233,6 +233,8 @@ function StudentPage({ setCurrentPage }) {
             <div className="bg-green-50 border border-green-200 rounded-lg p-6">
               <h3 className="font-semibold text-green-900 mb-2">
                 {result.isGroup ? 'Group Topic Assignment' : 'Your Topic Assignment'}
+                  {result.subject && <span className="text-lg font-bold"> - {result.subject}</span>}
+
               </h3>
               <div className="bg-white rounded-lg p-4 mb-3">
                 <p className="text-gray-800 font-medium">{result.topic}</p>
